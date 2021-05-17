@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Para Mejor MMO</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <div id="heading">
+    <h1 id=title>Buscando El RPG Soñado</h1>
+    <p id="description">Somos una compañia desarrolladora de videojuegos multiplayer masivos del tipo "RolPlayingGame" y nos gustaria saber como seria tu RPG Ideal!</p>
+    </div>
+    <div id="main">
+        <form id="survey-form">
+        <div id="input-fields">
+            <label id="Nombre-label"><b>Nombre:</b></label>
+            <input id="Nombre" type="Nombre" name="Nombre" class="form" required placeholder="Nombre Completo"><br>
+            <br>
+            <label id="email-label"><b>Email:</b></label>
+            <input id="email" type="email" name="email" class="form" required placeholder="Ejemplo@mail.com"><br>
+            <br>
+            <label id="number-label"><b>Edad:</b></label>
+            <input id="number" type="number" name="number" class="form" min="5" max="99" placeholder="12+">
+         </div>
+         <div id="dropdown-div"><br>
+            <label id="dropdown-label"><strong>RPG's de referencia que has probado: </strong></label><br>
+            <select id="dropdown" name="code-lang" class="form">
+                <option value="EJ.">Ejemplo "Perfect World"</option>
+                <option value="WoW Classic">WoW Classic</option>
+                <option value="Metin">Metin</option>
+                <option value="RS">Runescape/RS3</option>
+                <option value="GI">Genshin Impact</option>
+                <option value="RoM">Runes Of Magic</option>
+                <option value="M&B">Mount & Blade</option>
+                <option value="Tera">Tera</option>
+                <option value="SK">Skyrim</option>
+            </select>
+         </div>
+         <div id="button-area">
+             <br>
+            <label id="job-label"><b>Tipo De RPG de Preferencia:</b></label><br>
+            <input type="radio" class="radio-inline" name="gender" value="Shooter" checked> Shooter RPG.(Shooter)<br>
+            <input type="radio" class="radio-inline" name="gender" value="Fantasy"> Fantasy RPG.(Fantasy)<br>
+            <input type="radio" class="radio-inline" name="gender" value="Spacial"> Spacial RPG.(Spacial)<br>
+            <input type="radio" class="radio-inline" name="gender" value="Medieval"> Medieval RPG.(Medieval)
+          </div>
+          
+          <div id="button-area"><br><br>
+            <label id="os-label"><b>Consolas En Las Que Ha Experimetado(sistema operativo)::</b></label><br>
+            <input type="checkbox" name="tech1" value="PC"> PC-Mac/Windows<br>
+            <input type="checkbox" name="tech2" value="Xbox"> Xbox<br>
+            <input type="checkbox" name="tech3" value="PlayStation"> PlayStation<br>
+            <input type="checkbox" name="tech3" value="NSwitch"> Nintendo Switch<br>
+            <input type="checkbox" name="tech3" value="Stadia"> Stadia<br>
+          </div>
+
+          <div id="ending"><br><br>
+            <label id="comments-label">Cuentanos Como te Gustaria Que Fuera El "Nuevo RPG":</label><br>
+            <textarea style= height:120px;" class="form" placeholder="Descripcion concisa de aspectos importantes como *ambientes *epocas *sistemas de clases..."></textarea><br><br>
+            <input id="submit" type="submit"  class="form">
+          </div>
+        </form>
+    </div>
+
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
