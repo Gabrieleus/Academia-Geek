@@ -1,44 +1,75 @@
-#title {
-    font-size: 400%;
-    width: 60vmax;
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* css reset */
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 
-.center {
-    margin: auto;
-    padding: auto;
-    text-align: center;
-  }
-
-#image {
-    max-width: 70%;
+  body {
+    font-family: 'Raleway', sans-serif;
+    background-image: url("https://images3.alphacoders.com/874/874323.jpg");
+    width: 100%;
     height: auto;
-    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #45b6eb;
+    color:rgb(9, 168, 89);
+    font-size: 1.2vw;
+   }
+
+  #heading {
+    max-width: 750px;
+    margin: 4rem auto;
+    padding: .6rem;
+  }
+  #main {
+      padding: 0% 20% 0% 20%;
   }
 
-
-  @media only screen and (min-width:480px)
-  {
-
+  #title {
+    font-size: 2.2rem;
+    text-align: center;
+    line-height: 1.2;
+    padding: .6rem;
   }
 
-  @media only screen and (min-width:767px)
-  {
-
+  #description {
+    font-size: 1.1rem;
+    text-align: center;
+    padding: .2rem;
   }
 
-  @media only screen and (min-width:991px)
-  {
-
+  #survey-form {
+    background-color: #2222425d;
+    padding: 3rem 2.5rem;
+    border-radius: 7px;
+  }
+  #submit {
+    background:blue;
+    color: #fff;
+    padding: .7rem;
+    font-size: 1.15rem;
+    cursor: pointer;
   }
 
-  @media only screen and (min-width:1200px)
-  {
- .font {  
-    padding: 0px 200px 15px 200px;
-        }
+  #submit:hover {
+    background: rgb(9, 168, 89);
   }
 
-  @media(orientation: landscape)
-  {
+.form {
+  width: 100%;
+  padding: .7rem;
+  border-radius: 6px;
+  font-size: 1.0rem;
+  border: none;
+}
 
+  @media only screen and (max-width:480px){
+
+  #main {
+    padding: 0% 0% 0% 0%;
+    }
   }
